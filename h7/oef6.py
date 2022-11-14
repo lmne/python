@@ -14,22 +14,30 @@ door de achternaam (dit alles in hoofdletters) afgedrukt worden. Het afdrukken v
 Bv.: Hans Andersen geboren op 3/2 geeft: H. ANDERSEN waterman
 """
 def main():
-    opvragengeg()
+    array = [[] * 2]
+    print("start programma .....")
+    array = opvragengeg()
 
 
 
 def opvragengeg():
-    y = 0
-    arr = [[] * 2] * y
+    arr = [[] * 2]
+    y = 1
+
     while True:
-        invoer = input("geef hier de voor en achter naam in (vb lamine guisse) : ")
-        if invoer != '/':
-            arr[0][y] = invoer
+        invoer_naam = input("geef hier de voor en achter naam in (vb lamine guisse) : ")
+        if invoer_naam != "/":
+
+            arr[0][y]  invoer_naam
             arr[1][y] = input("geef hier de geboortedatum in  (vb 15/05/1999) : ")
             y = y+1
         else:
-            print(arr)
-            break
+            return arr
+        break
+
+
+
+
 
 
 
